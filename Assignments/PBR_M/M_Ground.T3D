@@ -1,0 +1,231 @@
+Begin Object Class=/Script/Engine.Material Name="M_Ground"
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionObjectRadius Name="MaterialExpressionObjectRadius_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVertexNormalWS Name="MaterialExpressionVertexNormalWS_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_3"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=0.050000
+      SliderMax=1.000000
+      ParameterName="displacement Mulitplier"
+      ExpressionGUID=A9BD5DE64E3DE044347D81BC05967C0F
+      MaterialExpressionEditorX=-1070
+      MaterialExpressionEditorY=642
+      MaterialExpressionGuid=E5D9CA944C91ED153AFB579FD5AEE9DC
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      DefaultValue=0.100000
+      SliderMax=1.000000
+      ParameterName="Tessel. Multiplier"
+      ExpressionGUID=41A1A891491D0DCE9B7150A3ACCD8960
+      MaterialExpressionEditorX=-496
+      MaterialExpressionEditorY=640
+      MaterialExpressionGuid=8A0A3E8842EFA88D79586AB8760567B0
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_1"
+      SizeX=654
+      SizeY=443
+      Text="Normal"
+      MaterialExpressionEditorX=-1248
+      MaterialExpressionEditorY=-240
+      MaterialExpressionGuid=A80E424143F59F455998E5803673B68C
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionObjectRadius_0"
+      MaterialExpressionEditorX=-638
+      MaterialExpressionEditorY=498
+      MaterialExpressionGuid=41F1A5E1431BFDC5CD2161B1909E1995
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_3"
+      A=(Expression=MaterialExpressionTextureSample'"M_Ground:MaterialExpressionTextureSample_5"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionScalarParameter'"M_Ground:MaterialExpressionScalarParameter_0"')
+      MaterialExpressionEditorX=-782
+      MaterialExpressionEditorY=450
+      MaterialExpressionGuid=9DA344D543F5D97D7563C8AB8FFFCC32
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2"
+      A=(Expression=MaterialExpressionVertexNormalWS'"M_Ground:MaterialExpressionVertexNormalWS_0"')
+      B=(Expression=MaterialExpressionMultiply'"M_Ground:MaterialExpressionMultiply_3"')
+      MaterialExpressionEditorX=-622
+      MaterialExpressionEditorY=338
+      MaterialExpressionGuid=5FC718634EFCA74A0123D9B214D40657
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionVertexNormalWS_0"
+      MaterialExpressionEditorX=-862
+      MaterialExpressionEditorY=306
+      MaterialExpressionGuid=C20EA43B4F18CB79C397C3B073880704
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_5"
+      Texture=Texture2D'"/Game/PBR_M/D_Blocks_01.D_Blocks_01"'
+      MaterialExpressionEditorX=-1070
+      MaterialExpressionEditorY=402
+      MaterialExpressionGuid=BD99D3DA46944062FF0EA6ABB9BC07F5
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_4"
+      A=(Expression=MaterialExpressionMultiply'"M_Ground:MaterialExpressionMultiply_2"')
+      B=(Expression=MaterialExpressionObjectRadius'"M_Ground:MaterialExpressionObjectRadius_0"')
+      MaterialExpressionEditorX=-446
+      MaterialExpressionEditorY=402
+      MaterialExpressionGuid=97EB97C94C8F1635B0B3B68BA659F460
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_2"
+      SizeX=825
+      SizeY=507
+      Text="Displacement"
+      MaterialExpressionEditorX=-1120
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=4ACD635043F540A04E7BDA9BE4FD1D5C
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1"
+      A=(Expression=MaterialExpressionTextureSample'"M_Ground:MaterialExpressionTextureSample_4"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionConstant'"M_Ground:MaterialExpressionConstant_5"')
+      MaterialExpressionEditorX=-894
+      MaterialExpressionEditorY=-94
+      MaterialExpressionGuid=69E7438F4C8AB48911E5178B6BDC6C3D
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_5"
+      R=10.000000
+      MaterialExpressionEditorX=-990
+      MaterialExpressionEditorY=18
+      MaterialExpressionGuid=D5ABC7F04EB58BA1A966148569811926
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_3"
+      R=10.000000
+      MaterialExpressionEditorX=-990
+      MaterialExpressionEditorY=98
+      MaterialExpressionGuid=D5ABC7F04EB58BA1A966148569811926
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionPower_0"
+      Base=(Expression=MaterialExpressionMultiply'"M_Ground:MaterialExpressionMultiply_1"')
+      Exponent=(Expression=MaterialExpressionConstant'"M_Ground:MaterialExpressionConstant_3"')
+      MaterialExpressionEditorX=-734
+      MaterialExpressionEditorY=-14
+      MaterialExpressionGuid=FF048505476FE704A2173291FA620FAD
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4"
+      Texture=Texture2D'"/Game/PBR_M/N_Blocks_01.N_Blocks_01"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-1214
+      MaterialExpressionEditorY=-174
+      MaterialExpressionGuid=B0B640CE4BEF3FF82F04D7B25EFD3352
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_2"
+      R=0.800000
+      MaterialExpressionEditorX=-320
+      MaterialExpressionEditorY=64
+      MaterialExpressionGuid=BA49604F43EC05ACCB6AE4991A94C269
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      R=0.200000
+      MaterialExpressionEditorX=-320
+      MaterialExpressionEditorY=-32
+      MaterialExpressionGuid=BA49604F43EC05ACCB6AE4991A94C269
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      MaterialExpressionEditorX=-320
+      MaterialExpressionEditorY=-112
+      MaterialExpressionGuid=BA49604F43EC05ACCB6AE4991A94C269
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_3"
+      Texture=Texture2D'"/Game/PBR_M/T_Blocks_01.T_Blocks_01"'
+      MaterialExpressionEditorX=-560
+      MaterialExpressionEditorY=-320
+      MaterialExpressionGuid=B81C77B54AC9A9D09A6CA6A4E62AD431
+      Material=Material'"M_Ground"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_0"')
+   Specular=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_1"')
+   Roughness=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_2"')
+   Normal=(Expression=MaterialExpressionPower'"MaterialExpressionPower_0"')
+   WorldDisplacement=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_4"')
+   TessellationMultiplier=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"')
+   D3D11TessellationMode=MTM_FlatTessellation
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"'
+   Expressions(1)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_4"'
+   Expressions(2)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(3)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   Expressions(4)=MaterialExpressionConstant'"MaterialExpressionConstant_2"'
+   Expressions(5)=MaterialExpressionPower'"MaterialExpressionPower_0"'
+   Expressions(6)=MaterialExpressionConstant'"MaterialExpressionConstant_3"'
+   Expressions(7)=MaterialExpressionConstant'"MaterialExpressionConstant_5"'
+   Expressions(8)=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"'
+   Expressions(9)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_5"'
+   Expressions(10)=MaterialExpressionVertexNormalWS'"MaterialExpressionVertexNormalWS_0"'
+   Expressions(11)=MaterialExpressionMultiply'"MaterialExpressionMultiply_2"'
+   Expressions(12)=MaterialExpressionMultiply'"MaterialExpressionMultiply_3"'
+   Expressions(13)=MaterialExpressionObjectRadius'"MaterialExpressionObjectRadius_0"'
+   Expressions(14)=MaterialExpressionMultiply'"MaterialExpressionMultiply_4"'
+   Expressions(15)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(16)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   EditorComments(0)=MaterialExpressionComment'"MaterialExpressionComment_1"'
+   EditorComments(1)=MaterialExpressionComment'"MaterialExpressionComment_2"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=D762BF23497AA0BF20D482AFCD7078BD
+   CachedExpressionData=(Parameters=(Entries[0]=(NameHashes=(7892257918246599136,12887136002159343106),ParameterInfos=((Name="Tessel. Multiplier"),(Name="displacement Mulitplier")),ExpressionGuids=(41A1A891491D0DCE9B7150A3ACCD8960,A9BD5DE64E3DE044347D81BC05967C0F),Overrides=(False,False)),ScalarValues=(0.100000,0.050000),ScalarMinMaxValues=((X=0.000000,Y=1.000000),(X=0.000000,Y=1.000000)),ScalarCurveValues=(None,None),ScalarCurveAtlasValues=(None,None)),ReferencedTextures=(Texture2D'"/Game/PBR_M/T_Blocks_01.T_Blocks_01"',Texture2D'"/Game/PBR_M/N_Blocks_01.N_Blocks_01"',Texture2D'"/Game/PBR_M/D_Blocks_01.D_Blocks_01"'),QualityLevelsUsed=(False,True,False))
+   ReferencedTextureGuids(0)=FE83CF0745C057F0A2C2F8AA3C513460
+   ReferencedTextureGuids(1)=9A6DCDC5442AEF664317C0BF958FC2BA
+   ReferencedTextureGuids(2)=0C2C1D80459748267AB1AF9694BDC442
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="N_Blocks_01",TextureReference=/Game/PBR_M/N_Blocks_01.N_Blocks_01)
+   TextureStreamingData(1)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="T_Blocks_01",TextureReference=/Game/PBR_M/T_Blocks_01.T_Blocks_01)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   ParameterOverviewExpansion=(("-12None", True))
+   LightingGuid=D1F1834D4EDEEF312926698A536D8C77
+End Object
